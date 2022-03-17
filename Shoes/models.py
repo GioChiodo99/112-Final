@@ -15,6 +15,7 @@ class Shoe(models.Model):
         db_table='Shoe'
 
 # In /admin all text fields need ()
+# If you type something wrong do - (null=True blank=True)
 class Product(models.Model):
     productname=models.CharField(max_length=255)
     producttype=models.ForeignKey(Shoe, on_delete=models.DO_NOTHING)
