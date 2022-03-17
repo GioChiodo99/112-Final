@@ -15,7 +15,7 @@ class Shoe(models.Model):
         db_table='Shoe'
 
 # In /admin all text fields need ()
-# If you type something wrong in the migration proccess here - Ex:"productur1"=models.URLField() change it to "porducturl"=models.URLField(null:True, blank=True)
+# If you type something wrong in the migration proccess here - Ex:"productur1"=models.URLField() change it to "producturl"=models.URLField(null:True, blank=True)
 class Product(models.Model):
     productname=models.CharField(max_length=255)
     producttype=models.ForeignKey(Shoe, on_delete=models.DO_NOTHING)
