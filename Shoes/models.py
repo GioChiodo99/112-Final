@@ -21,8 +21,8 @@ class Product(models.Model):
     user=models.ForeignKey(User, on_delete=models.DO_NOTHING)
     dateentered=models.DateField()
     price=models.DecimalField(max_digits=6, decimal_places=2)
-    producturl=models.URLField()
-    description=models.TextField()
+    producturl=models.URLField(null=True, blank=True)
+    description=models.TextField(null=True, blank=True)
 
     def discountAmount(self):
         self.discount=self.price * .05
