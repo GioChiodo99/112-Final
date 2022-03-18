@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import Product, Shoe, Review
 from django.urls import reverse_lazy 
 from .forms import ProductForm
-from .django.contrib.auth.decorators import login_required 
+from django.contrib.auth.decorators import login_required 
 
 # Create your views here.
 def index(request):

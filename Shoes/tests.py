@@ -33,5 +33,5 @@ class ProductTest(TestCase):
         self.assertEqual(self.product.discountPrice(), disc)
     
     def test_discountedAmount(self):
-        disc=self.product.price * ( 1 -.05)
+        disc=self.product.price * (1 -.05)
         self.assertEqual(self.product.discountPrice(), disc)    
